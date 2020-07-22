@@ -3,8 +3,8 @@
     <ul class="" v-for="user in usersList" :key="user.id">
       <li class="">
         <strong>Name: {{ user.name }}</strong> <br><br>
-        <div class="">Email: {{ user.email }}</div> <br>
-        <div>Website: {{ user.website }}</div>
+        <div class="">Email: <a href="mailto:">{{ user.email }}</a></div> <br>
+        <div>Website: <a href="http://" target="_blank" rel="noopener noreferrer">{{ user.website }}</a></div>
       </li>
     </ul>
   </div>
